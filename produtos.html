@@ -1,0 +1,108 @@
+<!doctype html>
+<!-- Academia Iron Power — Landing com planos/preços -->
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ervas Tecnológicas</title>
+    <meta
+      name="description"
+      content="Site da academia com planos, horários e modalidades."
+    />
+    <link rel="stylesheet" href="./css/produtos2.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav">
+        
+        <span class="brand-mark">ET</span>
+        <div class="logo"><strong>Ervas Tecnológicas</strong></div>
+
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+        <ul id="menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="hero" id="inicio">
+      <h1>Ervas Planos</h1>
+      <!-- <p></p> -->
+      <a href="#planos" class="btn">Ver planos</a>
+    </section>
+
+    <section id="planos" style="background: #eeeeee">
+      <div class="container">
+        <h2>Planos</h2>
+        <p class="subtitle">Escolha o ideal para você</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Mensal</h3>
+            <p style="font-size: 2rem; color: var(--primary); font-weight: 800">
+              R$99,90
+            </p>
+            <p>
+              Conhecimento para quem quer entender o universo da cannabis com
+              informação orgnizada e responsável.
+            </p>
+            <button class="btn primary" onclick="escolherPlano('Mensal')">
+              Assinar
+            </button>
+          </article>
+          <article class="card">
+            <h3>Trimestral</h3>
+            <p style="font-size: 2rem; color: var(--primary); font-weight: 800">
+              R$249,90
+            </p>
+            <p>
+              Mais profundidade, dados e ferramentas para acompanhar um mercado
+              em transformação.
+            </p>
+            <button class="btn primary" onclick="escolherPlano('Trimestral')">
+              Assinar
+            </button>
+          </article>
+          <article class="card">
+            <h3>Anual</h3>
+            <p style="font-size: 2rem; color: var(--primary); font-weight: 800">
+              R$899,90
+            </p>
+            <p>
+              Uma experiência personalizada para empresas e projetos que
+              precisam de análise, estratégia e acompanhamento.
+            </p>
+            <button class="btn primary" onclick="escolherPlano('Anual')">
+              Assinar
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container">
+        <h2>Fale conosco</h2>
+        <form class="contact" id="formContato" novalidate>
+          <div><label for="nome">Nome</label><input id="nome" required /></div>
+          <div>
+            <label for="email">E-mail</label
+            ><input id="email" type="email" required />
+          </div>
+          <div>
+            <label for="mensagem">Mensagem</label
+            ><textarea id="mensagem" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn primary">Enviar</button>
+          <div class="mensagem-feedback" id="feedback"></div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="ano"></span> Ervas Tecnológicas</p>
+    </footer>
+    <script src="./js/produtos.js"></script>
+  </body>
+</html>
