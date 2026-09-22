@@ -1,347 +1,310 @@
 <!doctype html>
 <!-- Define que este documento utiliza o padrão HTML5. -->
 <html lang="pt-BR">
-  <!-- Define o idioma principal da página como português do Brasil. -->
-  <head>
-    <!-- A seção HEAD guarda configurações, título, metadados e arquivos externos. -->
-    <meta charset="UTF-8" />
-    <!-- Faz o layout se adaptar corretamente a celulares e tablets. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Ervas Tecnológicas — informação, ciência e inovação em cannabis medicinal."
-    />
-    <title>Ervas Tecnológicas | Ciência, Saúde & Inovação</title>
-    <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
-    <!-- Importa o arquivo CSS responsável pelo visual, cores, espaçamentos e responsividade. -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- BODY contém todo o conteúdo que aparece visualmente para o visitante. -->
-    <!-- HEADER: barra superior fixa com a marca e o menu principal. -->
-    <header class="header" id="topo">
-      <nav class="nav container">
-        <a
-          class="brand"
-          href="#inicio"
-          aria-label="Ervas Tecnológicas - início"
-        >
-          <span class="brand-mark">ET</span>
-          <span>Ervas <strong>Tecnológicas</strong></span>
-        </a>
-        <button
-          class="menu-toggle"
-          aria-label="Abrir menu"
-          aria-expanded="false"
-        >
-          ☰
-        </button>
-        <div class="nav-links">
-          <a href="#inicio">Início</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#atuacao">Atuação</a>
-          <a href="#ciencia">Ciência</a>
-          <a href="#faq">FAQ</a>
-          <a href="produtos.html">Produtos</a>
-          <a class="nav-cta" href="#contato">Contato</a>
-        </div>
-      </nav>
-    </header>
+<!-- Define o idioma principal da página como português do Brasil. -->
 
-    <!-- MAIN: reúne o conteúdo principal dividido em seções. -->
-    <main>
-      <!-- HERO: primeira área da página, criada para apresentar a empresa e gerar interesse. -->
-      <section class="hero" id="inicio">
-        <div class="hero-glow"></div>
-        <div class="container hero-grid">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">CIÊNCIA • INFORMAÇÃO • INOVAÇÃO</p>
-            <h1>
-              Novas possibilidades para um tema que pede
-              <span>conhecimento.</span>
-            </h1>
-            <p class="hero-text">
-              A Ervas Tecnológicas nasce com uma proposta de aproximar ciência,
-              tecnologia e informação responsável sobre cannabis, com foco
-              especial no contexto medicinal.
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#sobre"
-                >Conheça a proposta <span>→</span></a
-              >
-              <a class="btn btn-ghost" href="#ciencia">Explorar conteúdo</a>
-            </div>
-            <div class="trust-row">
-              <span>✓ Informação responsável</span>
-              <span>✓ Foco científico</span>
-              <span>✓ Respeito à legislação</span>
-            </div>
-          </div>
-          <div class="hero-art reveal delay">
-            <div class="orb orb-one"></div>
-            <div class="orb orb-two"></div>
-            <div class="leaf-card">
-              <div class="leaf-symbol">✦</div>
-              <span>ER VAS<br />TECNOLÓGICAS</span>
-              <small>SCIENCE &amp; INNOVATION</small>
-            </div>
-            <div class="floating-card card-a">
-              <b>01</b><span>Pesquisa<br />&amp; informação</span>
-            </div>
-            <div class="floating-card card-b">
-              <b>02</b><span>Saúde<br />&amp; responsabilidade</span>
-            </div>
-          </div>
-        </div>
-      </section>
+<head>
+  <!-- A seção HEAD guarda configurações, título, metadados e arquivos externos. -->
+  <meta charset="UTF-8" />
+  <!-- Faz o layout se adaptar corretamente a celulares e tablets. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ervas Tecnológicas — informação, ciência e inovação em cannabis medicinal." />
+  <title>Ervas Tecnológicas | Ciência, Saúde & Inovação</title>
+  <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
+  <!-- Importa o arquivo CSS responsável pelo visual, cores, espaçamentos e responsividade. -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-      <!-- SOBRE: apresenta a proposta e o posicionamento da Ervas Tecnológicas. -->
-      <section class="section intro" id="sobre">
-        <div class="container two-col">
-          <div class="section-heading reveal">
-            <p class="eyebrow">SOBRE A EMPRESA</p>
-            <h2>Conhecimento antes de qualquer decisão.</h2>
-          </div>
-          <div class="section-copy reveal">
-            <p>
-              A <strong>Ervas Tecnológicas</strong> é uma proposta de marca
-              voltada ao universo da cannabis e às possibilidades de pesquisa,
-              educação e inovação relacionadas à planta.
-            </p>
-            <p>
-              Nosso propósito é transformar um assunto complexo em informação
-              clara, aproximando pessoas, profissionais e tecnologia — sempre
-              considerando evidências científicas, orientação profissional e as
-              regras aplicáveis em cada contexto.
-            </p>
-          </div>
-        </div>
-      </section>
+<body>
+  <!-- BODY contém todo o conteúdo que aparece visualmente para o visitante. -->
+  <!-- HEADER: barra superior fixa com a marca e o menu principal. -->
+  <header class="site-header" id="topo">
+    <nav class="nav container">
+      <a class="brand" href="#inicio" aria-label="Ervas Tecnológicas - início">
+        <span class="brand-mark">ET</span>
+        <span>Ervas <strong>Tecnológicas</strong></span>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        ☰
+      </button>
+      <div class="nav-links">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#atuacao">Atuação</a>
+        <a href="#ciencia">Ciência</a>
+        <a href="#faq">FAQ</a>
+        <a href="produtos.html">Produtos</a>
+        <a class="nav-cta" href="#contato">Contato</a>
+      </div>
+    </nav>
+  </header>
 
-      <!-- ATUAÇÃO: mostra as principais áreas em que a empresa pretende atuar. -->
-      <section class="section dark-section" id="atuacao">
-        <div class="container">
-          <div class="section-heading centered reveal">
-            <p class="eyebrow">ONDE ATUAMOS</p>
-            <h2>Um ecossistema de possibilidades.</h2>
-            <p>
-              Uma visão ampla do setor, sem substituir orientação médica ou
-              jurídica.
-            </p>
+  <!-- MAIN: reúne o conteúdo principal dividido em seções. -->
+  <main>
+    <!-- HERO: primeira área da página, criada para apresentar a empresa e gerar interesse. -->
+    <section class="hero" id="inicio">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">CIÊNCIA • INFORMAÇÃO • INOVAÇÃO</p>
+          <h1>
+            Novas possibilidades para um tema que pede
+            <span>conhecimento.</span>
+          </h1>
+          <p class="hero-text">
+            A Ervas Tecnológicas nasce com uma proposta de aproximar ciência,
+            tecnologia e informação responsável sobre cannabis, com foco
+            especial no contexto medicinal.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#sobre">Conheça a proposta <span>→</span></a>
+            <a class="btn btn-ghost" href="#ciencia">Explorar conteúdo</a>
           </div>
-          <div class="cards-grid">
-            <article class="info-card reveal">
-              <span class="icon">01</span>
-              <h3>Cannabis medicinal</h3>
-              <p>
-                Conteúdo e iniciativas voltadas à compreensão do uso medicinal,
-                pesquisa, evidências e acompanhamento profissional.
-              </p>
-              <a href="#ciencia">Saiba mais →</a>
-            </article>
-            <article class="info-card reveal">
-              <span class="icon">02</span>
-              <h3>Educação &amp; informação</h3>
-              <p>
-                Materiais educativos para tornar conceitos, estudos e aspectos
-                regulatórios mais acessíveis.
-              </p>
-              <a href="#ciencia">Ver conteúdos →</a>
-            </article>
-            <article class="info-card reveal">
-              <span class="icon">03</span>
-              <h3>Tecnologia &amp; inovação</h3>
-              <p>
-                Exploração de soluções digitais, dados e experiências que possam
-                contribuir para um setor mais informado.
-              </p>
-              <a href="#contato">Fale conosco →</a>
-            </article>
-            <article class="info-card reveal">
-              <span class="icon">04</span>
-              <h3>Pesquisa &amp; desenvolvimento</h3>
-              <p>
-                Interesse em conhecimento científico e em novas aplicações que
-                possam ser avaliadas de forma responsável.
-              </p>
-              <a href="#ciencia">Conheça a visão →</a>
-            </article>
+          <div class="trust-row">
+            <span>✓ Informação responsável</span>
+            <span>✓ Foco científico</span>
+            <span>✓ Respeito à legislação</span>
           </div>
         </div>
-      </section>
+        <div class="hero-art reveal delay">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="leaf-card">
+            <div class="leaf-symbol">✦</div>
+            <span>ER VAS<br />TECNOLÓGICAS</span>
+            <small>SCIENCE &amp; INNOVATION</small>
+          </div>
+          <div class="floating-card card-a">
+            <b>01</b><span>Pesquisa<br />&amp; informação</span>
+          </div>
+          <div class="floating-card card-b">
+            <b>02</b><span>Saúde<br />&amp; responsabilidade</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- CIÊNCIA: reforça o posicionamento baseado em informação e evidências. -->
-      <section class="section science" id="ciencia">
-        <div class="container science-grid">
-          <div class="science-copy reveal">
-            <p class="eyebrow">CIÊNCIA EM PRIMEIRO LUGAR</p>
-            <h2>Menos ruído. Mais informação confiável.</h2>
-            <p>
-              A conversa sobre cannabis envolve medicina, farmacologia,
-              legislação, tecnologia, agricultura e comportamento. Por isso,
-              nosso conteúdo deve separar evidência, hipótese e opinião.
-            </p>
-            <div class="principles">
-              <div>
-                <b>01</b
-                ><span
-                  ><strong>Fontes e evidências</strong><br />Priorizar
-                  conhecimento verificável.</span
-                >
-              </div>
-              <div>
-                <b>02</b
-                ><span
-                  ><strong>Transparência</strong><br />Deixar claros limites e
-                  incertezas.</span
-                >
-              </div>
-              <div>
-                <b>03</b
-                ><span
-                  ><strong>Responsabilidade</strong><br />Informação não
-                  substitui profissionais.</span
-                >
-              </div>
-            </div>
-          </div>
-          <div class="data-panel reveal">
-            <div class="panel-top">
-              <span>ET / LAB</span><span>01 — 04</span>
-            </div>
-            <div class="molecule">
-              <div class="ring ring-1"></div>
-              <div class="ring ring-2"></div>
-              <div class="node n1"></div>
-              <div class="node n2"></div>
-              <div class="node n3"></div>
-              <div class="node n4"></div>
-              <div class="node n5"></div>
-            </div>
-            <p>TECNOLOGIA + CIÊNCIA</p>
-            <strong>Transformar complexidade em clareza.</strong>
-          </div>
+    <!-- SOBRE: apresenta a proposta e o posicionamento da Ervas Tecnológicas. -->
+    <section class="section intro" id="sobre">
+      <div class="container two-col">
+        <div class="section-heading reveal">
+          <p class="eyebrow">SOBRE A EMPRESA</p>
+          <h2>Conhecimento antes de qualquer decisão.</h2>
         </div>
-      </section>
-
-      <!-- FAQ: perguntas frequentes controladas pelo JavaScript. -->
-      <section class="section faq-section" id="faq">
-        <div class="container faq-grid">
-          <div class="section-heading reveal">
-            <p class="eyebrow">DÚVIDAS FREQUENTES</p>
-            <h2>Informação clara começa com perguntas certas.</h2>
-          </div>
-          <div class="faq-list reveal">
-            <div class="faq-item">
-              <button class="faq-question">
-                A Ervas Tecnológicas oferece tratamento médico?<span>+</span>
-              </button>
-              <div class="faq-answer">
-                Não. Conteúdo institucional não substitui consulta, diagnóstico,
-                prescrição ou acompanhamento de profissionais habilitados.
-              </div>
-            </div>
-            <div class="faq-item">
-              <button class="faq-question">
-                O uso de cannabis é permitido no Brasil?<span>+</span>
-              </button>
-              <div class="faq-answer">
-                As regras dependem da finalidade, do produto e do contexto. O
-                site deve apresentar informações regulatórias atualizadas e
-                orientar o visitante a consultar fontes oficiais e profissionais
-                habilitados.
-              </div>
-            </div>
-            <div class="faq-item">
-              <button class="faq-question">
-                A empresa vende produtos pelo site?<span>+</span>
-              </button>
-              <div class="faq-answer">
-                Esta versão é institucional e informativa. Qualquer oferta,
-                comercialização ou intermediação deve ser implementada somente
-                após validação jurídica e regulatória específica.
-              </div>
-            </div>
-            <div class="faq-item">
-              <button class="faq-question">
-                Como posso falar com a equipe?<span>+</span>
-              </button>
-              <div class="faq-answer">
-                Use o formulário de contato abaixo. O envio demonstrativo desta
-                versão funciona apenas no navegador e não encaminha dados para
-                um servidor.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTATO: formulário para interação com visitantes. -->
-      <section class="section contact" id="contato">
-        <div class="container contact-box reveal">
-          <div>
-            <p class="eyebrow">ENTRE EM CONTATO</p>
-            <h2>Vamos conversar sobre ciência e inovação.</h2>
-            <p>Preencha o formulário para enviar uma mensagem demonstrativa.</p>
-          </div>
-          <form id="contactForm" class="contact-form">
-            <label
-              >Nome<input type="text" id="name" required placeholder="Seu nome"
-            /></label>
-            <label
-              >E-mail<input
-                type="email"
-                id="email"
-                required
-                placeholder="voce@email.com"
-            /></label>
-            <label
-              >Mensagem<textarea
-                id="message"
-                required
-                rows="4"
-                placeholder="Como podemos ajudar?"
-              ></textarea>
-            </label>
-            <button class="btn btn-primary" type="submit">
-              Enviar mensagem →
-            </button>
-            <p class="form-status" id="formStatus" aria-live="polite"></p>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER: informações finais, navegação e aviso institucional. -->
-    <footer class="footer">
-      <div class="container footer-grid">
-        <div>
-          <a class="brand" href="#inicio"
-            ><span class="brand-mark">ET</span
-            ><span>Ervas <strong>Tecnológicas</strong></span></a
-          >
-          <p>Ciência, informação e inovação.</p>
-        </div>
-        <div>
-          <span class="footer-title">Navegação</span><a href="#sobre">Sobre</a
-          ><a href="#atuacao">Atuação</a><a href="#ciencia">Ciência</a
-          ><a href="#contato">Contato</a>
-        </div>
-        <div>
-          <span class="footer-title">Aviso</span>
+        <div class="section-copy reveal">
           <p>
-            Conteúdo informativo. Não constitui orientação médica, jurídica ou
-            incentivo ao uso de substâncias.
+            A <strong>Ervas Tecnológicas</strong> é uma proposta de marca
+            voltada ao universo da cannabis e às possibilidades de pesquisa,
+            educação e inovação relacionadas à planta.
+          </p>
+          <p>
+            Nosso propósito é transformar um assunto complexo em informação
+            clara, aproximando pessoas, profissionais e tecnologia — sempre
+            considerando evidências científicas, orientação profissional e as
+            regras aplicáveis em cada contexto.
           </p>
         </div>
       </div>
-      <div class="container footer-bottom">
-        <span>© <span id="year"></span> Ervas Tecnológicas</span
-        ><a href="#topo">Voltar ao topo ↑</a>
-      </div>
-    </footer>
+    </section>
 
-    <!-- Importa o JavaScript, que adiciona interatividade ao site. -->
-    <script src="js/script.js"></script>
-  </body>
+    <!-- ATUAÇÃO: mostra as principais áreas em que a empresa pretende atuar. -->
+    <section class="section dark-section" id="atuacao">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">ONDE ATUAMOS</p>
+          <h2>Um ecossistema de possibilidades.</h2>
+          <p>
+            Uma visão ampla do setor, sem substituir orientação médica ou
+            jurídica.
+          </p>
+        </div>
+        <div class="cards-grid">
+          <article class="info-card reveal">
+            <span class="icon">01</span>
+            <h3>Cannabis medicinal</h3>
+            <p>
+              Conteúdo e iniciativas voltadas à compreensão do uso medicinal,
+              pesquisa, evidências e acompanhamento profissional.
+            </p>
+            <a href="#ciencia">Saiba mais →</a>
+          </article>
+          <article class="info-card reveal">
+            <span class="icon">02</span>
+            <h3>Educação &amp; informação</h3>
+            <p>
+              Materiais educativos para tornar conceitos, estudos e aspectos
+              regulatórios mais acessíveis.
+            </p>
+            <a href="#ciencia">Ver conteúdos →</a>
+          </article>
+          <article class="info-card reveal">
+            <span class="icon">03</span>
+            <h3>Tecnologia &amp; inovação</h3>
+            <p>
+              Exploração de soluções digitais, dados e experiências que possam
+              contribuir para um setor mais informado.
+            </p>
+            <a href="#contato">Fale conosco →</a>
+          </article>
+          <article class="info-card reveal">
+            <span class="icon">04</span>
+            <h3>Pesquisa &amp; desenvolvimento</h3>
+            <p>
+              Interesse em conhecimento científico e em novas aplicações que
+              possam ser avaliadas de forma responsável.
+            </p>
+            <a href="#ciencia">Conheça a visão →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIÊNCIA: reforça o posicionamento baseado em informação e evidências. -->
+    <section class="section science" id="ciencia">
+      <div class="container science-grid">
+        <div class="science-copy reveal">
+          <p class="eyebrow">CIÊNCIA EM PRIMEIRO LUGAR</p>
+          <h2>Menos ruído. Mais informação confiável.</h2>
+          <p>
+            A conversa sobre cannabis envolve medicina, farmacologia,
+            legislação, tecnologia, agricultura e comportamento. Por isso,
+            nosso conteúdo deve separar evidência, hipótese e opinião.
+          </p>
+          <div class="principles">
+            <div>
+              <b>01</b><span><strong>Fontes e evidências</strong><br />Priorizar
+                conhecimento verificável.</span>
+            </div>
+            <div>
+              <b>02</b><span><strong>Transparência</strong><br />Deixar claros limites e
+                incertezas.</span>
+            </div>
+            <div>
+              <b>03</b><span><strong>Responsabilidade</strong><br />Informação não
+                substitui profissionais.</span>
+            </div>
+          </div>
+        </div>
+        <div class="data-panel reveal">
+          <div class="panel-top">
+            <span>ET / LAB</span><span>01 — 04</span>
+          </div>
+          <div class="molecule">
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="node n1"></div>
+            <div class="node n2"></div>
+            <div class="node n3"></div>
+            <div class="node n4"></div>
+            <div class="node n5"></div>
+          </div>
+          <p>TECNOLOGIA + CIÊNCIA</p>
+          <strong>Transformar complexidade em clareza.</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ: perguntas frequentes controladas pelo JavaScript. -->
+    <section class="section faq-section" id="faq">
+      <div class="container faq-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">DÚVIDAS FREQUENTES</p>
+          <h2>Informação clara começa com perguntas certas.</h2>
+        </div>
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <button class="faq-question">
+              A Ervas Tecnológicas oferece tratamento médico?<span>+</span>
+            </button>
+            <div class="faq-answer">
+              Não. Conteúdo institucional não substitui consulta, diagnóstico,
+              prescrição ou acompanhamento de profissionais habilitados.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              O uso de cannabis é permitido no Brasil?<span>+</span>
+            </button>
+            <div class="faq-answer">
+              As regras dependem da finalidade, do produto e do contexto. O
+              site deve apresentar informações regulatórias atualizadas e
+              orientar o visitante a consultar fontes oficiais e profissionais
+              habilitados.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              A empresa vende produtos pelo site?<span>+</span>
+            </button>
+            <div class="faq-answer">
+              Esta versão é institucional e informativa. Qualquer oferta,
+              comercialização ou intermediação deve ser implementada somente
+              após validação jurídica e regulatória específica.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Como posso falar com a equipe?<span>+</span>
+            </button>
+            <div class="faq-answer">
+              Use o formulário de contato abaixo. O envio demonstrativo desta
+              versão funciona apenas no navegador e não encaminha dados para
+              um servidor.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO: formulário para interação com visitantes. -->
+    <section class="section contact" id="contato">
+      <div class="container contact-box reveal">
+        <div>
+          <p class="eyebrow">ENTRE EM CONTATO</p>
+          <h2>Vamos conversar sobre ciência e inovação.</h2>
+          <p>Preencha o formulário para enviar uma mensagem demonstrativa.</p>
+        </div>
+        <form id="contactForm" class="contact-form">
+          <label>Nome<input type="text" id="name" required placeholder="Seu nome" /></label>
+          <label>E-mail<input type="email" id="email" required placeholder="voce@email.com" /></label>
+          <label>Mensagem<textarea id="message" required rows="4" placeholder="Como podemos ajudar?"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">
+            Enviar mensagem →
+          </button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: informações finais, navegação e aviso institucional. -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#inicio"><span class="brand-mark">ET</span><span>Ervas
+            <strong>Tecnológicas</strong></span></a>
+        <p>Ciência, informação e inovação.</p>
+      </div>
+      <div>
+        <span class="footer-title">Navegação</span><a href="#sobre">Sobre</a><a href="#atuacao">Atuação</a><a
+          href="#ciencia">Ciência</a><a href="#contato">Contato</a>
+      </div>
+      <div>
+        <span class="footer-title">Aviso</span>
+        <p>
+          Conteúdo informativo. Não constitui orientação médica, jurídica ou
+          incentivo ao uso de substâncias.
+        </p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Ervas Tecnológicas</span><a href="#topo">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <!-- Importa o JavaScript, que adiciona interatividade ao site. -->
+  <script src="js/script.js"></script>
+</body>
+
 </html>

@@ -154,31 +154,15 @@ header.site-header {
   padding: 16px 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* =========================================================
    LOGO / MARCA
    ========================================================= */
 
-/* =========================================================
-   FAZER O QUE PEDE NO README2
-   ========================================================= */
-
-/* ========================================================= */
-
 .brand {
   display: flex;
   align-items: center;
-  gap: 6px; /* distância entre ET e o nome */
+  gap: 6px;
+  /* distância entre ET e o nome */
   font-family: "Manrope", sans-serif;
   font-weight: 600;
   color: #ffffff;
@@ -213,19 +197,6 @@ header.site-header {
   letter-spacing: 0.5px;
   margin-left: 0;
 }
-
-/* ========================================================= */
-
-
-
-
-
-
-
-
-
-
-
 
 /* =========================================================
    LINKS DO MENU
@@ -272,6 +243,17 @@ header.site-header {
 /* =========================================================
    BOTÃO DE CONTATO DO MENU
    ========================================================= */
+
+.btn.hero-cta {
+  background: var(--primary);
+  /* ou qualquer cor escura, ex: #0c1913 */
+  color: #ffffff;
+}
+
+.btn.hero-cta:hover {
+  background: var(--primary-light);
+  /* um pouco mais escuro ainda no hover */
+}
 
 .btn-contato {
   background: var(--accent);
@@ -328,11 +310,9 @@ header.site-header {
   overflow: hidden;
 
   background:
-    radial-gradient(
-      circle at 80% 20%,
+    radial-gradient(circle at 80% 20%,
       rgba(183, 216, 91, 0.25),
-      transparent 32%
-    ),
+      transparent 32%),
     linear-gradient(135deg, #f4f5f0 0%, #edf1e9 100%);
 
   color: var(--ink);
@@ -416,6 +396,8 @@ header.site-header {
   border: 0;
 
   cursor: pointer;
+
+  color: #0c1913;
 
   transition:
     transform 0.25s ease,
@@ -691,6 +673,7 @@ footer {
   text-align: center;
 }
 
+
 /* Links do rodapé */
 /* footer a {
   color: var(--accent);
@@ -725,6 +708,7 @@ footer {
    ========================================================= */
 
 @media (max-width: 720px) {
+
   /* Esconde os links inicialmente */
   .nav ul {
     display: none;
