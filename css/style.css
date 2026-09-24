@@ -719,7 +719,10 @@ textarea {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
-    transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease;
+    transition:
+      opacity 0.25s ease,
+      visibility 0.25s ease,
+      transform 0.25s ease;
   }
   .nav-links.open {
     display: flex;
@@ -729,7 +732,7 @@ textarea {
   }
   .nav-links a {
     padding: 11px;
-    display: block;;
+    display: block;
   }
   .hero {
     min-height: auto;
