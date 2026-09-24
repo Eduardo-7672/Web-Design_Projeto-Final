@@ -1,7 +1,9 @@
 /* =========================================================
    ERVAS TECNOLÓGICAS — JAVASCRIPT
+
    Este arquivo adiciona interatividade ao site.
    ========================================================= */
+
 
 /* =========================================================
    MENU MOBILE
@@ -11,98 +13,240 @@ const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
 menuToggle?.addEventListener("click", () => {
-  const open = navLinks.classList.toggle("open");
 
-  menuToggle.setAttribute("aria-expanded", String(open));
+  const open = navLinks?.classList.toggle("open");
 
-  menuToggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+  menuToggle.setAttribute(
+    "aria-expanded",
+    String(open)
+  );
 
-  menuToggle.textContent = open ? "✕" : "☰";
+  menuToggle.setAttribute(
+    "aria-label",
+    open ? "Fechar menu" : "Abrir menu"
+  );
+
+  menuToggle.textContent =
+    open ? "✕" : "☰";
+
 });
+
 
 /* Fecha o menu quando um link é clicado */
 
-document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("open");
+document
+  .querySelectorAll(".nav-links a")
+  .forEach((link) => {
 
-    menuToggle?.setAttribute("aria-expanded", "false");
+    link.addEventListener("click", () => {
 
-    if (menuToggle) {
-      menuToggle.setAttribute("aria-label", "Abrir menu");
-      menuToggle.textContent = "☰";
-    }
+      navLinks?.classList.remove("open");
+
+      menuToggle?.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+      if (menuToggle) {
+
+        menuToggle.setAttribute(
+          "aria-label",
+          "Abrir menu"
+        );
+
+        menuToggle.textContent = "☰";
+
+      }
+
+    });
+
   });
-});
+
 
 /* =========================================================
    FAQ
 ========================================================= */
 
-document.querySelectorAll(".faq-question").forEach((button) => {
-  button.addEventListener("click", () => {
-    const item = button.closest(".faq-item");
+document
+  .querySelectorAll(".faq-question")
+  .forEach((button) => {
 
-    document.querySelectorAll(".faq-item").forEach((other) => {
-      if (other !== item) {
-        other.classList.remove("active");
-      }
+    button.addEventListener("click", () => {
+
+      const item =
+        button.closest(".faq-item");
+
+
+      document
+        .querySelectorAll(".faq-item")
+        .forEach((other) => {
+
+          if (other !== item) {
+
+            other.classList.remove("active");
+
+          }
+
+        });
+
+
+      item?.classList.toggle("active");
+
     });
 
-    item?.classList.toggle("active");
   });
-});
+
 
 /* =========================================================
    ANIMAÇÕES AO ENTRAR NA TELA
 ========================================================= */
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
+const observer =
+  new IntersectionObserver(
 
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  {
-    threshold: 0.12,
-  },
-);
+    (entries) => {
 
-document.querySelectorAll(".reveal").forEach((el) => {
-  observer.observe(el);
-});
+      entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+
+          entry.target.classList.add("visible");
+
+          observer.unobserve(
+            entry.target
+          );
+
+        }
+
+      });
+
+    },
+
+    {
+      threshold: 0.12,
+    }
+
+  );
+
+
+document
+  .querySelectorAll(".reveal")
+  .forEach((el) => {
+
+    observer.observe(el);
+
+  });
+
 
 /* =========================================================
    ANO DO RODAPÉ
 ========================================================= */
 
-const year = document.getElementById("year");
+const year =
+  document.getElementById("year");
 
 if (year) {
-  year.textContent = new Date().getFullYear();
+
+  year.textContent =
+    new Date().getFullYear();
+
 }
+
 
 /* =========================================================
    FORMULÁRIO DE CONTATO
 ========================================================= */
 
-const form = document.getElementById("contactForm");
-const status = document.getElementById("formStatus");
+const form =
+  document.getElementById("contactForm");
 
-form?.addEventListener("submit", (event) => {
-  event.preventDefault();
+const status =
+  document.getElementById("formStatus");
 
-  const nameInput = document.getElementById("name");
 
-  const name = nameInput?.value.trim() || "visitante";
+form?.addEventListener(
+  "submit",
+  (event) => {
 
-  if (status) {
-    status.textContent = `Obrigado, ${name}! Esta é uma demonstração: nenhum dado foi enviado a um servidor.`;
+    event.preventDefault();
+
+
+    const nameInput =
+      document.getElementById("name");
+
+
+    const name =
+      nameInput?.value.trim() ||
+      "visitante";
+
+
+    if (status) {
+
+      status.textContent =
+        `Obrigado, ${name}! Esta é uma demonstração: nenhum dado foi enviado a um servidor.`;
+
+    }
+
+
+    form.reset();
+
   }
+);
 
-  form.reset();
-});
+
+/* =========================================================
+   VOLTAR AO TOPO
+   BOTÃO FLUTUANTE
+========================================================= */
+
+const backTop =
+  document.getElementById("backTop");
+
+
+/*
+   Mostra o botão depois que o usuário
+   desce aproximadamente 500px.
+*/
+
+window.addEventListener(
+  "scroll",
+  () => {
+
+    if (!backTop) {
+      return;
+    }
+
+
+    if (window.scrollY > 500) {
+
+      backTop.classList.add("show");
+
+    } else {
+
+      backTop.classList.remove("show");
+
+    }
+
+  }
+);
+
+
+/*
+   Ao clicar no botão, retorna suavemente
+   para o início da página.
+*/
+
+backTop?.addEventListener(
+  "click",
+  () => {
+
+    window.scrollTo({
+
+      top: 0,
+
+      behavior: "smooth",
+
+    });
+
+  }
+);
