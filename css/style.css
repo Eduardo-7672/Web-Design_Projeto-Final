@@ -224,11 +224,9 @@ textarea {
     150px 0 100px;
 
   background:
-    radial-gradient(
-      circle at 75% 25%,
+    radial-gradient(circle at 75% 25%,
       rgba(183, 216, 91, 0.24),
-      transparent 30%
-    ),
+      transparent 30%),
     var(--bg);
 
   overflow: hidden;
@@ -427,11 +425,9 @@ textarea {
     48% 48% 44% 44%;
 
   background:
-    linear-gradient(
-      145deg,
+    linear-gradient(145deg,
       #1c4933,
-      #091a11
-    );
+      #091a11);
 
   color: var(--lime);
 
@@ -650,7 +646,7 @@ textarea {
 }
 
 
-.section-copy p + p {
+.section-copy p+p {
 
   margin-top: 20px;
 
@@ -691,7 +687,7 @@ textarea {
 }
 
 
-.centered > p:last-child {
+.centered>p:last-child {
 
   color: #9ca9a0;
 
@@ -824,7 +820,7 @@ textarea {
 }
 
 
-.science-copy > p:not(.eyebrow) {
+.science-copy>p:not(.eyebrow) {
 
   color: var(--muted);
 
@@ -842,7 +838,7 @@ textarea {
 }
 
 
-.principles > div {
+.principles>div {
 
   display: flex;
 
@@ -925,7 +921,7 @@ textarea {
 }
 
 
-.data-panel > p {
+.data-panel>p {
 
   color: var(--lime);
 
@@ -936,7 +932,7 @@ textarea {
 }
 
 
-.data-panel > strong {
+.data-panel>strong {
 
   font-family: Manrope;
 
@@ -986,8 +982,7 @@ textarea {
   top: 45px;
 
   transform:
-    translateX(-50%)
-    rotate(30deg);
+    translateX(-50%) rotate(30deg);
 
 }
 
@@ -1001,8 +996,7 @@ textarea {
   top: 45px;
 
   transform:
-    translateX(-50%)
-    rotate(-30deg);
+    translateX(-50%) rotate(-30deg);
 
 }
 
@@ -1208,7 +1202,7 @@ textarea {
 }
 
 
-.contact-box > div > p:last-child {
+.contact-box>div>p:last-child {
 
   color: #b7c2ba;
 
@@ -1326,7 +1320,7 @@ textarea {
 }
 
 
-.footer-grid > div > p {
+.footer-grid>div>p {
 
   font-size: 13px;
 
@@ -1344,7 +1338,7 @@ textarea {
 }
 
 
-.footer-grid > div:nth-child(2) {
+.footer-grid>div:nth-child(2) {
 
   display: flex;
 
